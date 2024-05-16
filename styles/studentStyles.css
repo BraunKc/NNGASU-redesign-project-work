@@ -1,0 +1,544 @@
+header {
+    z-index: 1;
+}
+.bothPages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* ____________________NAVBAR */
+.island {
+    /* параметры */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* визуал */
+    /* анимация */
+    position: fixed;
+    top: -65px;
+}
+    
+.pushNotifications {
+/* параметры */
+    width: 100%;
+/* визуал */
+/* анимация */
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+    
+#firstNotification, #secondNotification, #thirdNotification, #fourthNotification {
+    /* параметры */
+    position: inherit;
+    height: 35px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* визуал */    
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+    background: var(--secondColor);
+    color: var(--accentColor);
+    /* анимация */
+}
+    
+#fifthNotification {
+    /* параметры */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    /* визуал */
+    border-radius: 15px;
+    font-size: 35px;
+    font-weight: 600;
+    padding: 5px;
+    background: #fff;
+    color: var(--secondColor);
+    /* анимация */
+    opacity: 0%;
+}
+    
+.homeContainer {
+    /* параметры */
+    display: flex;
+    min-height: 50px;
+    min-width: 50px;
+    max-height: 50px;
+    max-width: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 0 15px;
+    cursor: pointer;
+    /* визуал */
+    background: var(--secondColor);
+    border-radius: 20px;
+    /* анимация */
+    position: relative;
+    top: 65px;
+}
+
+.homeButton {
+    transition: all .3s;
+    border-radius: 20px;
+}
+
+.homeButton:hover {
+    background: var(--nngasuColorOr);
+    fill: white;
+}
+    
+.navbar {
+/* параметры */
+    height: 50px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    margin: 15px 0 0 15px;
+/* визуал */ 
+    background: var(--secondColor);
+    border-radius: 20px;
+/* анимация */
+    position: relative;
+    top: 65px;
+}
+
+.social {
+/* параметры */
+    height:25px;
+    display: flex;
+    justify-content: space-around;
+    padding: 3px 10px 3px 10px;
+    margin: 25px 15px 0 100px;
+    gap: 5px;
+/* визуал */
+    background: var(--secondColor);
+    border-radius: 10px;
+/* анимация */
+    position: relative;
+    top: 65px;
+}
+
+#menu * {
+    margin: 0;
+    padding: 0;
+}
+#menu {
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 300px;
+    top: 70px;
+    padding: 0;
+    background: var(--secondColor);
+    height: 400px;
+    width: 800px;
+    border-radius: 20px;
+    opacity: 0;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu button {
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 100%;
+    border-radius: 20px;
+    background: inherit;
+    color: inherit;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .2s;
+}
+#menu button:hover {
+    background: var(--nngasuColorOr);
+}
+#menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+}
+#menu > ul {
+    margin: 0 auto 0 auto;
+}
+#menu > ul > li > a {
+    font-size: 20px;  
+    font-weight: 600;
+}
+#menu > ul > li > ul > li > a {
+    font-weight: 500;
+    color: #fdfff5cc;
+}
+#menu > ul > li > ul {
+    gap: 5px;
+}
+#menu a {
+    display: inline-block;
+    color: var(--accentColor);
+    text-decoration: none;
+    transition: all .1s;
+}
+#menu a:hover {
+    transform: scale(1.1);
+    color: var(--nngasuColorOr);
+}
+#fullMenu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background: var(--secondColor);
+    z-index: 2;
+    opacity: 0;
+    transition: all 1s;
+}
+/* ____________________NAVBARBUTTONS */
+.navbarButtonsContainer {
+    /* параметры */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* визуал */
+}
+.navbarButton {
+    color: var(--accentColor);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all .1s;
+}
+.navbarButton:hover {
+    color: var(--nngasuColorOr);
+}
+    
+.rightButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ____________________MAIN */
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.firstScreen {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.titleNNGASU {
+    font-size: 100px;
+    font-weight: 800;
+    margin: auto;
+}
+.titleNNGASU span {
+    display: flex;
+    border-radius: 40px;
+    color: #ffffff52;
+    padding: 0 30px 0 30px;
+    cursor: pointer;
+    user-select: none;
+    transition: all .3s;
+}
+.titleNNGASU span:hover {
+    color: var(--nngasuColorOr);
+}
+.titleNNGASU span:active {
+    transform: scale(0.95);
+}
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.navigation a {
+    color: #ffffff33;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+.navigation a:hover {
+    color: #ffffff;
+}
+.slideShow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+}
+.slideShow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(3px);
+    transition: all .5s;
+}
+.slideShow::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.newsBox {
+    width: 100%;
+    height: 100vh;
+}
+.ims {
+    width: 100%;
+    height: 100%;
+    opacity: 20%;
+    box-shadow: 0 -100px 100px black;
+}
+.mainCont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 5px solid red;
+}
+.titleText {
+    margin-top: 35px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    color: #000;
+}
+.titleT {
+    width: 150px;
+}
+.newsDecoration {
+    width: 100px;
+    height: 100px;
+    fill: orange;
+}
+.boxes {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.box {
+    width: 70px;
+    height: 700px;
+    margin: 10px;
+    transition: all .4s;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.250);
+    border-radius: 50px;
+}
+.box1 {
+    width: 1000px;
+    background: #7371fc;
+}
+.box2 {
+    background: #a594f9;
+}
+.box3 {
+    background: #cdc1ff;
+}
+.box4 {
+    background: rgb(214, 147, 235);
+}
+.btn {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #7371fc;
+    background: #fff;
+    border-radius: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    letter-spacing: 1px;
+    font-family: Montserrat;
+    transition: all .2s;
+    box-shadow: inset 0 0px 0 #7371fc, inset 0 0px 0 #7371fc;
+}
+.btn:hover {
+    box-shadow: inset -100px 0px 0 #7371fc, inset 100px 0px 0 #7371fc;
+    border: none;
+    color: white;
+}
+.anons {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+.anons-box {
+    height: 500px;
+    padding: 30px;
+    width: 500px;
+    background: #7371fc;
+    transition: all .4s;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.250);
+}
+.anons-box:hover {
+    height: 505px;
+    width: 505px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.250);
+}
+.anons-header {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    letter-spacing: 3px;
+}
+.abox-header {
+    height: 40px;
+}
+.abox-header > span {
+    font-size: 20px;
+}
+/* ____________________ICONS */
+svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+
+#menuBtn, #line1, #line2, #line3 {
+    stroke: var(--accentColor);
+    cursor: pointer;
+    transition: stroke .1s;
+}
+#menuBtn:hover * {
+    stroke: var(--nngasuColorOr);
+}
+
+.icoSocial, .rutubeRed, .rutubeBlack, .dzenStar {
+    fill: var(--accentColor);
+    transition: all .23s;
+}
+    
+.icoSocial:hover {
+    transform: scale(1.1);
+}
+    
+.vk:hover {
+    fill: #0077ff;
+}
+    
+.telegram:hover {
+    fill: #24A1DE;
+}
+    
+.youtube:hover {
+    fill: #FF0000;
+}
+    
+ .rutube:hover .rutubeRed{
+    fill: #ED143B;
+     transform-origin: 50% 80%; 
+}
+
+ .rutube:hover .rutubeBlack {
+    fill: #100943;
+    transform-origin: 50% 80%;
+} 
+    
+.dzen:hover {
+    fill: #000;
+}
+    
+.dzen:hover .dzenStar{
+    opacity: 100;
+}
+
+/* FOOTER */
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 100px;
+    width: 70%;
+    background: var(--secondColor);
+    border-radius: 50px;
+}
+.footerCopyright {
+    background: var(--secondColor);
+    border-radius: 0 0 10px 10px;
+    padding: 0 5px 2px 5px;
+    margin-bottom: 10px;
+    color: var(--accentColor);
+    align-self: center;
+}
+.footerContainer {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footerSocial, .footerLinks {
+    margin: auto 0 auto 0;
+}
+.footerSocial {
+    margin-right: 20px;
+}
+.footerLinks * {
+    list-style: none;
+}
+.footerIcoSocial:hover {
+    fill: var(--nngasuColorOr);
+    transition: all .3s;
+}
+
+
+/* MEDIA */
+@media (max-width: 1919px) {
+    .pushNotifications {
+        top: 170px;
+        left: -250px;
+    }
+}
+    
+    @media (max-width: 768px) {
+    .navbar, .social {
+        display: none;
+    }
+}
+

@@ -1,0 +1,119 @@
+.newsBox {
+    background: white;
+    width: 100%;
+    height: 100vh;
+}
+.ims {
+    width: 100%;
+    height: 100%;
+    opacity: 20%;
+    box-shadow: 0 -100px 100px black;
+}
+.mainCont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 5px solid red;
+}
+.titleText {
+    margin-top: 35px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    color: #000;
+}
+.titleT {
+    width: 150px;
+}
+.newsDecoration {
+    width: 100px;
+    height: 100px;
+    fill: orange;
+}
+.boxes {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.box {
+    width: 70px;
+    height: 700px;
+    margin: 10px;
+    transition: all .4s;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.250);
+    border-radius: 50px;
+}
+.box1 {
+    width: 1000px;
+    background: #7371fc;
+}
+.box2 {
+    background: #a594f9;
+}
+.box3 {
+    background: #cdc1ff;
+}
+.box4 {
+    background: rgb(214, 147, 235);
+}
+.btn {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #7371fc;
+    background: #fff;
+    border-radius: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    letter-spacing: 1px;
+    font-family: Montserrat;
+    transition: all .2s;
+    box-shadow: inset 0 0px 0 #7371fc, inset 0 0px 0 #7371fc;
+}
+.btn:hover {
+    box-shadow: inset -100px 0px 0 #7371fc, inset 100px 0px 0 #7371fc;
+    border: none;
+    color: white;
+}
+.anons {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+.anons-box {
+    height: 500px;
+    padding: 30px;
+    width: 500px;
+    background: #7371fc;
+    transition: all .4s;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.250);
+}
+.anons-box:hover {
+    height: 505px;
+    width: 505px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.250);
+}
+.anons-header {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    letter-spacing: 3px;
+}
+.abox-header {
+    height: 40px;
+}
+.abox-header > span {
+    font-size: 20px;
+}

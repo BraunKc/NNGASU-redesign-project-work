@@ -1,0 +1,46 @@
+html {
+    background: var(--mainBgColor);
+}
+
+.nonamePage {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 100px;
+    width: 70%;
+    background: var(--secondColor);
+    border-radius: 50px;
+}
+.footerCopyright {
+    background: var(--secondColor);
+    border-radius: 0 0 10px 10px;
+    padding: 0 5px 2px 5px;
+    margin-bottom: 10px;
+    color: var(--accentColor);
+    align-self: center;
+}
+.footerContainer {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footerSocial, .footerLinks {
+    margin: auto 0 auto 0;
+}
+.footerSocial {
+    margin-right: 20px;
+}
+.footerLinks * {
+    list-style: none;
+}
+.footerIcoSocial:hover {
+    fill: var(--nngasuColorOr);
+    transition: all .3s;
+}
